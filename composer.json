@@ -1,0 +1,12 @@
+{
+    "name": "pacoc/server_openpay_php",
+    "authors": [
+        {
+            "name": "FranciscoMoraes",
+            "email": "moraes.junior6@gmail.com"
+        }
+    ],
+    "require": {
+        "openpay/sdk": "dev-master"
+    }
+}
