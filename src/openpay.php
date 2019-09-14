@@ -6,9 +6,8 @@ require_once "./vendor/openpay/sdk/Openpay.php";
 
 		public function __construct(){
 		
-	        $this->op = Openpay::getInstance('', '');    
+	        $this->op = Openpay::getInstance('m8sqkijxlviacxkxgzjm', 'sk_2bbbbd611d3f4a16a555af20de49fe57');    
 	      }
-
 
 	      public function pagarConTarjeta($tokenId,$cantidad,$nombre,$idDispositivo,$email,$telefono){
 
@@ -40,9 +39,8 @@ require_once "./vendor/openpay/sdk/Openpay.php";
 	      	$status = array("status"=>-1,"error" =>$errorMsg,"errorCode" => $errorCode);
 	      }
 	      else
-	      	$status = array("status"=>0,"error"=>"ok","errorCode" => -1);
+	      	$status = array("status"=>true);
 	      return $status;
-	      //$status Tendrá siempre dos elementos "status" y "error". "status":= -1 cuando hay un error "status":= 0 cuando todo esta correcto. El mensaje de error lo encuentras en el segundo elemento "error"
 	  }
 	}
 ?>
