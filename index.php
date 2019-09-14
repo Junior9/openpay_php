@@ -5,7 +5,7 @@ $op = new PagoOpenpay();
 
 	  //$ret = $op->pagarConTarjeta($_POST['token_id'],$_POST['ammount'],$_POST['nombre'],$_POST['deviceIdHiddenFieldName'],$_POST['email'],$_POST['phone']);
 
-$ret = $op->pagarConTarjeta("token",500,"Juan Vazquez Juarez","devise","juan.vazquez@empresa.com.mx","4423456723");
+$ret = $op->pagarConTarjeta("",500,"Juan Vazquez Juarez","","juan.vazquez@empresa.com.mx","4423456723");
 
 if($ret["status"] < 0){
 	print_r($ret["error"]);
@@ -21,4 +21,4 @@ else{
 		echo $myJSON;
     }
     
-    ?>
+?>
